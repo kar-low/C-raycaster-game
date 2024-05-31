@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/rayLow.dir/src/main.c.o -o rayLow  -lraylib -lm 
