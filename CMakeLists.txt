@@ -4,7 +4,7 @@ cmake_policy(SET CMP0072 NEW)
 set(USE_WAYLAND ON)
 add_executable(rayLow 
   src/main.c
-
+  src/textures.h
   )
 
 target_link_libraries(rayLow raylib m)

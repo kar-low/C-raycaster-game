@@ -3,6 +3,9 @@
 
 CMakeFiles/rayLow.dir/src/main.c.o: src/main.c \
   src/raylib.h \
+  src/tex1.ppm \
+  src/tex2.ppm \
+  src/textures.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/flt-eval-method.h \
@@ -46,9 +49,9 @@ CMakeFiles/rayLow.dir/src/main.c.o: src/main.c \
 
 /usr/include/gnu/stubs.h:
 
-/usr/include/bits/mathcalls-helper-functions.h:
+/usr/include/gnu/stubs-64.h:
 
-/usr/include/bits/types.h:
+/usr/include/features.h:
 
 /usr/include/bits/fp-fast.h:
 
@@ -62,23 +65,19 @@ CMakeFiles/rayLow.dir/src/main.c.o: src/main.c \
 
 /usr/include/bits/timesize.h:
 
-/usr/include/gnu/stubs-64.h:
-
 /usr/include/bits/floatn.h:
 
 /usr/include/bits/types/__mbstate_t.h:
 
-/usr/include/math.h:
-
-/usr/include/bits/math-vector.h:
-
 /usr/include/bits/fp-logb.h:
+
+src/tex2.ppm:
 
 /usr/include/bits/long-double.h:
 
 /usr/include/bits/libm-simd-decl-stubs.h:
 
-/usr/include/bits/mathcalls.h:
+src/textures.h:
 
 /usr/include/bits/libc-header-start.h:
 
@@ -88,9 +87,25 @@ src/raylib.h:
 
 /usr/include/bits/floatn-common.h:
 
+src/tex1.ppm:
+
 src/main.c:
 
+/usr/include/math.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/mathcalls.h:
+
 /usr/include/bits/stdio_lim.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/bits/types/__fpos64_t.h:
 
 /usr/lib/gcc/x86_64-redhat-linux/14/include/stdbool.h:
 
@@ -102,14 +117,8 @@ src/main.c:
 
 /usr/include/bits/types/__fpos_t.h:
 
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/features-time64.h:
-
 /usr/include/bits/typesizes.h:
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/bits/types/struct_FILE.h:
-
-/usr/include/features.h:

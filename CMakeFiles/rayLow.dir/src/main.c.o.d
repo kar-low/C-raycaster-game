@@ -4,6 +4,7 @@ CMakeFiles/rayLow.dir/src/main.c.o: \
  /home/karlow/Documents/raycasterProject/src/raylib.h \
  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdbool.h \
+ /home/karlow/Documents/raycasterProject/src/textures.h \
  /usr/include/math.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
@@ -21,4 +22,6 @@ CMakeFiles/rayLow.dir/src/main.c.o: \
  /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h
+ /usr/include/bits/stdio_lim.h \
+ /home/karlow/Documents/raycasterProject/src/tex1.ppm \
+ /home/karlow/Documents/raycasterProject/src/tex2.ppm
