@@ -7,17 +7,34 @@
 #define P3 3*PI/2
 #define DR 0.0174533
 
+
 int map[] = {
   1,1,1,1,1,1,1,1,
   1,2,0,1,0,0,0,1,
-  1,1,0,1,0,0,0,1,
-  1,1,0,0,0,0,0,1,
-  1,1,1,1,0,0,0,1,
+  1,1,0,1,0,0,0,2,
+  1,1,0,0,0,0,0,2,
+  1,3,3,1,0,0,0,2,
   1,1,1,1,0,0,0,1,
   1,1,1,1,0,0,0,1,
   1,1,1,1,1,1,1,1,
 
 };
+
+Color MapColor(int a){
+  switch(a){
+    case 1:
+      return (Color){0,0,120,255}; 
+    break;
+    case 2:
+      return (Color){0,80,0,255};
+    break;
+    case 3:
+      return (Color){100,65,23,255};
+    break;
+
+  }
+}
+
 int mapH=8, mapW=8;
 int screenH, screenW;
 bool collisionCheck(float _pX, float _pY){
@@ -93,15 +110,22 @@ void DrawRays(){
       if(mp>0 && mp<mapH*mapW && map[mp]>0) {vx=rx; vy=ry; disV=dist(pX,pY,vx,vy);dof=8; mv=map[mp];}
       else {rx+=xo;ry+=yo; dof+=1;}
     }
-        
-    if(disV<disH){rx=vx;ry=vy;disT=disV;color=(Color){0,0,fmax(160-disT/2,15),255};}
-    if(disH<disV){rx=hx;ry=hy;disT=disH;color=(Color){0,0,fmax(130-disT/2,0),255};}
-        float ca=pa-ra; if(ca<0) {ca+=2*PI;} if(ca>2*PI) {ca-=2*PI;} disT*=cos(ca);
+        //(Color){0,0,fmax(130-disT/2,0),255};
+    if(disV<disH){rx=vx;ry=vy;disT=disV;color=MapColor(mv);}
+    if(disH<disV){rx=hx;ry=hy;disT=disH;color=MapColor(mh); color.r=fmax(color.r-15, 0); color.g=fmax(color.g-15, 0);color.b=fmax(color.b-15, 0);}
+
+
+    float ca=pa-ra; if(ca<0) {ca+=2*PI;} if(ca>2*PI) {ca-=2*PI;} disT*=cos(ca);
     float lineH = (64*screenH)/disT; if(lineH>screenH) lineH=screenH;
     float lineO=(screenH/2)-lineH/2;
+
+    color.r=fmax(color.r-disT/5, 0);
+    color.g=fmax(color.g-disT/5, 0);
+    color.b=fmax(color.b-disT/5, 0);
+
     DrawLineEx((Vector2){r*30.0f*(9.0f/16.0f),lineO},(Vector2){r*30.0f*(9.0f/16.0f),lineH+lineO}, 30.0f*(9.0f/16.0f), color);
     ra+=(DR/2); if(ra<0) {ra+=2*PI;} if(ra>2*PI) {ra-=2*PI;}
-   if(r==90) CenterRayDist=disT;
+   if(r==60) CenterRayDist=disT;
    // DrawLine(pX,pY,rx,ry,(Color){255,0,0,255});
 
   }
@@ -124,7 +148,7 @@ int main(){
     BeginDrawing();
     ClearBackground((Color){5,5,5,255});
     inputs();
-    DrawRectangle(0,screenH/2,2000,screenH, (Color){0,0,fmax(50-CenterRayDist/7,10),255});
+    DrawRectangle(0,screenH/2,2000,screenH, (Color){10,9,2,255});
 //  DrawMap();
 
     DrawRays();
