@@ -3,8 +3,8 @@
 
 CMakeFiles/rayLow.dir/src/main.c.o: src/main.c \
   src/raylib.h \
-  src/tex1.ppm \
-  src/tex2.ppm \
+  src/texFloors.data \
+  src/texWalls.data \
   src/textures.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
@@ -57,37 +57,37 @@ CMakeFiles/rayLow.dir/src/main.c.o: src/main.c \
 
 /usr/include/bits/time64.h:
 
-/usr/include/bits/flt-eval-method.h:
-
 /usr/include/sys/cdefs.h:
 
 /usr/include/stdc-predef.h:
 
 /usr/include/bits/timesize.h:
 
-/usr/include/bits/floatn.h:
-
-/usr/include/bits/types/__mbstate_t.h:
-
 /usr/include/bits/fp-logb.h:
-
-src/tex2.ppm:
 
 /usr/include/bits/long-double.h:
 
 /usr/include/bits/libm-simd-decl-stubs.h:
 
+/usr/include/bits/flt-eval-method.h:
+
+src/texWalls.data:
+
 src/textures.h:
 
+/usr/include/bits/floatn.h:
+
+/usr/include/bits/types/__mbstate_t.h:
+
 /usr/include/bits/libc-header-start.h:
+
+src/texFloors.data:
 
 /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h:
 
 src/raylib.h:
 
 /usr/include/bits/floatn-common.h:
-
-src/tex1.ppm:
 
 src/main.c:
 

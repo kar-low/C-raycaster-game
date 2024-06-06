@@ -4,8 +4,8 @@
 CMakeFiles/rayLow.dir/src/main.c.o
  /home/karlow/Documents/raycasterProject/src/main.c
  /home/karlow/Documents/raycasterProject/src/raylib.h
- /home/karlow/Documents/raycasterProject/src/tex1.ppm
- /home/karlow/Documents/raycasterProject/src/tex2.ppm
+ /home/karlow/Documents/raycasterProject/src/texFloors.data
+ /home/karlow/Documents/raycasterProject/src/texWalls.data
  /home/karlow/Documents/raycasterProject/src/textures.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h

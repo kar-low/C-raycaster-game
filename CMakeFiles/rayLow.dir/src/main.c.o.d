@@ -23,5 +23,5 @@ CMakeFiles/rayLow.dir/src/main.c.o: \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
  /usr/include/bits/types/cookie_io_functions_t.h \
  /usr/include/bits/stdio_lim.h \
- /home/karlow/Documents/raycasterProject/src/tex1.ppm \
- /home/karlow/Documents/raycasterProject/src/tex2.ppm
+ /home/karlow/Documents/raycasterProject/src/texWalls.data \
+ /home/karlow/Documents/raycasterProject/src/texFloors.data
